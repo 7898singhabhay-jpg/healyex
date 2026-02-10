@@ -82,3 +82,172 @@ h1, h2, h3 {
   padding: 20px 0;
   margin-top: 60px;
 }
+
+.hero {
+  background: var(--light-blue);
+  padding: 80px 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  color: var(--gray-text);
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  margin-right: 15px;
+}
+
+.btn{
+    margin-right: 15px;
+    display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: var(--primary-blue);
+  color: var(--white);
+  padding: 12px 22px;
+  border-radius: 8px;
+}
+
+.btn.secondary {
+  border: 2px solid var(--primary-blue);
+  color: var(--primary-blue);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+/* PRIMARY BUTTON (Book Appointment) */
+.btn.primary:hover {
+  background: #084d96;              /* darker blue */
+  transform: translateY(-2px);       /* subtle lift */
+  box-shadow: 0 8px 20px rgba(10, 102, 194, 0.3);
+}
+
+/* SECONDARY BUTTON (Call Now) */
+.btn.secondary:hover {
+  background: var(--primary-blue);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(10, 102, 194, 0.25);
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+
+.services {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.why-choose {
+  background: var(--light-blue);
+  padding: 80px 0;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.why-card {
+  background: var(--white);
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.about-mini {
+  padding: 80px 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-mini img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.testimonials {
+  background: var(--light-blue);
+  padding: 80px 0;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.testimonial-card {
+  background: var(--white);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.testimonial-card h4 {
+  margin-top: 15px;
+  color: var(--primary-blue);
+}
+
+.appointment-cta {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.appointment-cta h2 {
+  margin-bottom: 15px;
+}
+
